@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+    --casinegro: rgb(19, 19, 19);
+    --funte_banner: 'Bebas Neue', cursive;
+}
+
+/* subtex */
+
+.subtex{
+    font-size: 1.5rem;
+    margin: 10px .5rem;
+    color: rgba(255, 255, 255, 0.911);
+}
+
+.suntex1{
+    margin-top: 2rem;
+    
+}
+

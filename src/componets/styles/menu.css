@@ -1,0 +1,134 @@
+.menu_conted{
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--casinegro);
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+}
+
+.menu_conted .menuitem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu_conted .menuitem span{
+    font-size: .7rem;
+}
+
+.menu_conted .menuitem i{
+    font-size: 1.7rem;
+}
+
+
+
+/* menu  top netflix  */
+
+.top_padre_conted{
+    width: 100%;
+    position: fixed;
+    
+    z-index: 100;
+    transition: all 1s;
+}
+.menu_top_conted{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    transition: all 1s;
+}
+
+.searchmenu{
+    display: flex;
+}
+
+.logo_menu_conted{
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.menu_top_conted .logo_menu_conted{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_top_conted .logo_menu_conted .neflixLogo{
+    width: 2.3rem;
+    overflow: hidden;
+}
+
+.menu_top_conted .logo_menu_conted .neflixLogo img{
+    width: 100%;
+}
+
+.menu_top_conted .logo_menu_conted .userIcon{
+    width: 1.7rem;
+    overflow: hidden;
+}
+
+.searchmenu i{
+    font-size: 1.7rem;
+    margin-right: 1.3rem;
+}
+
+.menu_top_conted .logo_menu_conted .userIcon img{
+    width: 100%;
+    border-radius: 5px;
+}
+/* menu top ssegunda parte  */
+.tex_menu_top{
+    width: 100%;
+    display: flex;
+}
+
+.tex_menu_top .tex_menu_top_item_span{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.2rem;
+    padding-bottom: .7rem;
+
+}
+
+.tex_menu_top .tex_menu_top_item_span span{
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+
+/* ocultura menu  */
+
+.menu_sow{
+    height: 0;
+    visibility: hidden;
+    transition: all 1s;
+}
+
+.colorriseinden{
+    background-color: rgba(0, 0, 0, 0.514);
+}
+
+.sombramenuconted{
+    position: absolute;
+    top: 0;
+    height: 10rem;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.658), rgba(0, 0, 0, 0));
+    z-index: -1;
+
+}
+
+
+
+
+
+
+
+

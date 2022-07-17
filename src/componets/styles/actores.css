@@ -1,0 +1,73 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,400;1,700&display=swap');
+
+.data_actor{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.data_actor .actor_img_conted{
+    width: 100%;
+}
+
+.data_actor .actor_img_conted img{
+    width: 100%;
+}
+
+.data_actor .shadow_actors{
+    position: absolute;
+    width: 100%;
+    height: 10rem;
+    bottom: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0) , black);
+}
+
+.data_actor .actorname{
+    position: absolute;
+    bottom: 0;
+    font-size: 3rem;
+    margin: 0 0  2rem 0 ;
+    font-family: 'PT Serif', serif;
+    text-align: center;
+}
+/* actors metadata */
+
+.actor_metadata{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+   width: 100%;
+   justify-content: space-evenly;
+}
+.actor_metadata span{
+
+    bottom: 0;
+    display: flex;
+    font-size: 1rem;
+}
+
+.actor_metadata .ratingstart{
+    background-color: rgb(255, 196, 0);
+    color: var(--casinegro);
+    border-radius: 50%;
+    padding: .2rem;
+}
+
+.actor_metadata .actorratingConted{
+    display: flex;
+    align-items: center;
+    color:rgb(255, 196, 0) ;
+}
+
+.profecionActor{
+    background: rgb(59, 59, 59);
+    font-weight: bold;
+    padding: 0px .3rem;
+    border-radius: 3px;
+}
+
+ 

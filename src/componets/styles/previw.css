@@ -1,0 +1,172 @@
+
+.atras_conted i{
+    font-size: 2rem;
+    border: 2px solid ;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    margin: .5rem;
+    text-shadow: 0px 0px 10px black;
+
+
+}
+
+
+.videopreviw_conted,
+.poster_conted_previw {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 15rem;
+    overflow: hidden;
+}
+
+
+.videopreviw_conted iframe {
+    width: 100%;
+    height: 15rem;
+    object-fit: contain;
+    border: none;
+}
+
+.poster_conted_previw img {
+    width: 100%;
+    height: 100%;
+}
+
+.show_video {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+/* metadata */
+
+.metadata_previw_item {
+    width: 100%;
+    margin-top: -.4rem;
+    margin-left: .3rem;
+}
+
+
+.metadata_previw_item span {
+    padding: 0 5px;
+    font-size: 1.2rem;
+}
+
+
+.metadata_previw_item .calidad_previw {
+    background-color: white;
+    color: var(--casinegro);
+    font-weight: bold;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+
+.eltitulo_previ {
+    font-weight: bold;
+    width: 100%;
+    text-overflow: ellipsis;
+    font-size: 1.8rem;
+    margin-left: .5rem;
+}
+
+
+/* play y descargar  */
+.previw_play_botoom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+
+.previw_botomplay_item {
+    width: 95%;
+    display: flex;
+    background-color: white;
+    padding: .4rem 0px;
+    color: var(--casinegro);
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.previw_botomplay_item i {
+    font-size: 2rem;
+}
+
+/* overviw */
+.overviw_previw {
+    width: 99%;
+    justify-content: center;
+    padding-left: .5rem;
+    height: 5.5rem;
+    overflow: hidden;
+}
+
+.overviw_previw p {
+    text-overflow: ellipsis;
+}
+
+.SubcontenPreviw {
+    width: 100%;
+    overflow: hidden;
+}
+/* actores */
+
+
+
+
+
+.slider_padre_conted1{
+    width: 100%;
+    display: block;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: auto;
+
+  }
+  
+  .slider_padre_conted::-webkit-scrollbar{
+    display: none;
+  }
+  
+  .slider_item1{
+     display: block;
+     white-space: nowrap;
+       display: flex;
+
+  }
+  
+  .slider_item1 .sliderSubconted1{
+   display: inline-block;
+  margin-left: 0.4rem;
+
+  
+  }
+  
+  .slider_item1 .sliderSubconted1 img{
+   border-radius: 5px;
+   width: 7rem;
+   box-shadow: 5px 4px 9px 0px #0000002d;
+  }
+  
+/*generos  */
+.categorias{
+    display: flex;
+    margin-left: -2rem;
+}
+.categorias li {
+    margin: 0 1rem ;
+    color: red ;
+}
+
+.categorias span{
+    color: white;
+}

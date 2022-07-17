@@ -1,0 +1,38 @@
+
+
+
+.slider_padre_conted{
+    width: 100%;
+    display: block;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: auto;
+    margin-bottom: 1rem;
+
+  
+  }
+  
+  .slider_padre_conted::-webkit-scrollbar{
+    display: none;
+  }
+  
+  .slider_item{
+     display: block;
+     white-space: nowrap;
+       display: flex;
+   
+  }
+  
+  .slider_item .sliderSubconted{
+   display: inline-block;
+  margin-left: 0.4rem;
+
+  
+  }
+  
+  .slider_item .sliderSubconted img{
+   border-radius: 5px;
+   width: 7rem;
+   box-shadow: 5px 4px 9px 0px #0000002d;
+  }
+  
