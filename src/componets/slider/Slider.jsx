@@ -10,7 +10,7 @@ const Slider = () => {
 
     const [popular, setpapipopular] = useState([])
 
-    const popularurl = 'https://api.themoviedb.org/3/movie/popular?api_key=442a13190cbd173b3f5645d87fe8aebf&language=en-US&page=2'
+    const popularurl = 'https://api.themoviedb.org/3/movie/popular?api_key=442a13190cbd173b3f5645d87fe8aebf&language=en-US&page=3'
     const imgLink = 'https://image.tmdb.org/t/p/w500/'
 
     const popularpeticion = async () => {
@@ -21,8 +21,12 @@ const Slider = () => {
     }
 
 
-
     return (
+
+
+
+        <section>
+
 
         <div className='slider_padre_conted'>
             <div className="slider_item">
@@ -42,6 +46,140 @@ const Slider = () => {
                 }
             </div>
         </div>
+
+
+        <div className='slider_padre_conted'>
+            <div className="slider_item">
+                {
+                    popular.map((itemPopular =>
+                        <Link to={` /previw/${itemPopular.id}`}>
+
+                            <div className="item_slider_img">
+                                <div className="sliderSubconted">
+                                    <img src={imgLink + itemPopular.poster_path} alt="" />
+                                </div>
+                            </div>
+
+                        </Link>
+
+                    ))
+                }
+            </div>
+        </div>
+
+
+        <div className='slider_padre_conted'>
+            <div className="slider_item">
+                {
+                    popular.map((itemPopular =>
+                        <Link to={` /previw/${itemPopular.id}`}>
+
+                            <div className="item_slider_img">
+                                <div className="sliderSubconted">
+                                    <img src={imgLink + itemPopular.poster_path} alt="" />
+                                </div>
+                            </div>
+
+                        </Link>
+
+                    ))
+                }
+            </div>
+        </div>
+
+
+
+        <div className='slider_padre_conted'>
+            <div className="slider_item">
+                {
+                    popular.map((itemPopular =>
+                        <Link to={` /previw/${itemPopular.id}`}>
+
+                            <div className="item_slider_img">
+                                <div className="sliderSubconted">
+                                    <img src={imgLink + itemPopular.poster_path} alt="" />
+                                </div>
+                            </div>
+
+                        </Link>
+
+                    ))
+                }
+            </div>
+        </div>
+
+
+
+        <div className='slider_padre_conted'>
+            <div className="slider_item">
+                {
+                    popular.map((itemPopular =>
+                        <Link to={` /previw/${itemPopular.id}`}>
+
+                            <div className="item_slider_img">
+                                <div className="sliderSubconted">
+                                    <img src={imgLink + itemPopular.poster_path} alt="" />
+                                </div>
+                            </div>
+
+                        </Link>
+
+                    ))
+                }
+            </div>
+        </div>
+
+
+
+
+           <div className='slider_padre_conted'>
+            <div className="slider_item">
+                {
+                    popular.map((itemPopular =>
+                        <Link to={` /previw/${itemPopular.id}`}>
+
+                            <div className="item_slider_img">
+                                <div className="sliderSubconted">
+                                    <img src={imgLink + itemPopular.poster_path} alt="" />
+                                </div>
+                            </div>
+
+                        </Link>
+
+                    ))
+                }
+            </div>
+        </div>
+
+
+
+
+        <div className='slider_padre_conted'>
+            <div className="slider_item">
+                {
+                    popular.map((itemPopular =>
+                        <Link to={` /previw/${itemPopular.id}`}>
+
+                            <div className="item_slider_img">
+                                <div className="sliderSubconted">
+                                    <img src={imgLink + itemPopular.poster_path} alt="" />
+                                </div>
+                            </div>
+
+                        </Link>
+
+                    ))
+                }
+            </div>
+        </div>
+
+
+
+        
+
+        </section>
+
+
 
     )
 }

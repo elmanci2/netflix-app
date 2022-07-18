@@ -10,9 +10,10 @@ const Rutas = () => {
     <div>
 
       <Routes>
+        <Route path='/%20/previw/:id/%20/lcast/:castid' element={<Actores />} />
+        <Route path='/%20/previw/:id/%20/lcast/:id/%20/lcast/:id' element={<Previw />} />
         <Route path='/%20/previw/:id' element={<Previw />} />
-        <Route path='/videplay' element={<VideoPlayer/>} />
-        <Route path='/%20/previw/:id/%20/lcast/:castid' element={<Actores/>} />
+        <Route path='/videplay' element={<VideoPlayer />} />
         <Route path='*' element={<Homen />} />
       </Routes>
 

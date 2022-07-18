@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link, useParams, useNavigate } from 'react-router-dom'
 import '../styles/previw.css'
 import midata from './api.json'
 
@@ -9,10 +9,13 @@ import midata from './api.json'
 const Previw = () => {
 
 
-
   const { id } = useParams()
 
-  console.log(midata);
+
+
+  const midataur = midata[0]
+
+  console.log(midataur);
 
   // =========== const urls  =============
   const imagenlinker = 'https://image.tmdb.org/t/p/w500/'
@@ -107,14 +110,18 @@ const Previw = () => {
   return (
 
     <section className='SubcontenPreviw'>
+      <Link to={-1}>
+        <div className="atras_conted" >
+          <i className='bx bx-chevrons-left'></i>
+        </div>
+      </Link>
 
-      <a href='' className="atras_conted">
-        <i className='bx bx-chevrons-left'></i>
-      </a>
 
       <div className="banner_conted_previw">
         <div className="videopreviw_conted  ">
-          <iframe src={keyYoutube} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  ></iframe>
+          <div class="plyr__video-embed" id="player">
+            <iframe src={keyYoutube} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  ></iframe>
+          </div>
         </div>
 
         <div className="poster_conted_previw  ">
@@ -135,15 +142,14 @@ const Previw = () => {
       </div>
 
 
+
+
       <div className="previw_play_botoom">
 
         <div className="previw_botomplay_item">
-          <Link className='link' to='/videplay'>
-            <i className="bx bx-play"></i>
-            <span>ver</span>
-          </Link>
+          <i className="bx bx-play"></i>
+          <span>ver</span>
         </div>
-
       </div>
 
 
@@ -166,7 +172,7 @@ const Previw = () => {
           {
             detener.map((actores =>
 
-              <Link  to={ ` /lcast/${actores.id}`}>
+              <Link to={` /lcast/${actores.id}`}>
                 <div className="sliderSubconted1">
                   <img src={imagenlinker + actores.profile_path} alt="" />
                 </div>

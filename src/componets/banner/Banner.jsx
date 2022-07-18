@@ -4,7 +4,6 @@ import '../styles/banner.css'
 
 const Banner = () => {
 
-
     const imagenlinker1 = 'https://image.tmdb.org/t/p/original/'
     const lurlPreviw = ` https://api.themoviedb.org/3/movie/667739?api_key=442a13190cbd173b3f5645d87fe8aebf `
 
@@ -15,19 +14,23 @@ const Banner = () => {
 
 
     const [banner, setbanner] = useState([])
-
-
+    const [genersBanner, setGenerwsBanner] = useState([])
 
     const pedirbanner = async () => {
         const resdata = await fetch(lurlPreviw)
         const datapreviw = await resdata.json()
-        console.log(datapreviw);
         setbanner(datapreviw)
+        setGenerwsBanner(datapreviw.genres)
     }
+
+
+    let generos = genersBanner.slice(0 , 4)
+
 
 
 
     return (
+
         <div>
             <div className="banner_conted">
                 <div className="banner_intems_conted">
@@ -38,10 +41,11 @@ const Banner = () => {
                     <div className="sombra_banner"></div>
                     <div className="categoria_conted_banner">
                         <ul className="list_categoria">
-                            <li className='listnone'><span>drama</span></li>
-                            <li><span>drama</span></li>
-                            <li><span>drama</span></li>
-                            <li><span>drama</span></li>
+                            {
+                                generos.map((losgenerosSon =>
+                                    <li> <span>{losgenerosSon.name}</span></li>
+                                ))
+                            }
                         </ul>
                     </div>
 

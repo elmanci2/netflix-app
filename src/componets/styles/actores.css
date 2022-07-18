@@ -1,7 +1,14 @@
-
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,200&display=swap');
 
-.data_actor{
+.padreCtors_container {
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.data_actor {
     position: relative;
     width: 100%;
     height: 70vh;
@@ -10,64 +17,264 @@
     justify-content: center;
 }
 
-.data_actor .actor_img_conted{
+.data_actor .actor_img_conted {
     width: 100%;
 }
 
-.data_actor .actor_img_conted img{
+.data_actor .actor_img_conted img {
     width: 100%;
 }
 
-.data_actor .shadow_actors{
+.data_actor .shadow_actors {
     position: absolute;
     width: 100%;
     height: 10rem;
     bottom: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0) , black);
+    background: linear-gradient(rgba(0, 0, 0, 0), black);
 }
 
-.data_actor .actorname{
+.data_actor .actorname {
     position: absolute;
     bottom: 0;
     font-size: 3rem;
-    margin: 0 0  2rem 0 ;
+    margin: 0 0 2rem 0;
     font-family: 'PT Serif', serif;
     text-align: center;
 }
+
 /* actors metadata */
 
-.actor_metadata{
+.actor_metadata {
     position: absolute;
     bottom: 0;
     display: flex;
-   width: 100%;
-   justify-content: space-evenly;
+    width: 100%;
+    justify-content: space-evenly;
 }
-.actor_metadata span{
+
+.actor_metadata span {
 
     bottom: 0;
     display: flex;
     font-size: 1rem;
 }
 
-.actor_metadata .ratingstart{
+.actor_metadata .ratingstart {
     background-color: rgb(255, 196, 0);
     color: var(--casinegro);
     border-radius: 50%;
     padding: .2rem;
 }
 
-.actor_metadata .actorratingConted{
+.actor_metadata .actorratingConted {
     display: flex;
     align-items: center;
-    color:rgb(255, 196, 0) ;
+    color: rgb(255, 196, 0);
 }
 
-.profecionActor{
+.profecionActor {
     background: rgb(59, 59, 59);
     font-weight: bold;
     padding: 0px .3rem;
     border-radius: 3px;
 }
 
- 
+/* modal up */
+
+.modal_ubp {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+
+
+}
+
+.modal_ubp i {
+    font-size: 3rem;
+    text-shadow: 0px 0px 15px black;
+}
+
+
+/* ==== modal clases funcionales  */
+.up_clas_padre {
+    z-index: 13;
+    top: 0;
+    color: black;
+}
+
+
+.up_modal_container {
+    transform: rotate(180deg);
+    width: 2rem;
+    height: 2rem;
+    margin-top: 7rem;
+
+}
+
+
+
+/* modal containe */
+.modal_actors {
+    width: 100%;
+    position: absolute;
+    height: 0;
+    background-color: white;
+    bottom: 0;
+    z-index: 10;
+    margin-top: 10rem;
+    color: black;
+    border-radius: 1rem 1rem 0px 0px;
+    transition: all 1s;
+
+}
+
+.mostrar_modal {
+    height: 86vh;
+}
+
+
+.modal_actors .actor_modal_conteiner {
+    color: black;
+}
+
+/* ========= stilos del contenodo modal =========== */
+
+.separador_modal {
+    width: 100%;
+    height: 4rem;
+}
+
+.participa {
+    margin: .7rem 0 .5rem .5rem;
+}
+
+.actorname_modal {
+    margin: 0 0 0rem 1rem;
+    font-size: 2rem;
+    font-family: 'PT Serif', serif;
+    margin-bottom: 3rem;
+}
+
+/* muvie 2 */
+
+.protagonisa_car_mubie_nanner {
+    width: 100%;
+    margin: 0 0 0 .7rem;
+
+}
+
+.protagonisa_car_mubie_nanner .carmuvie_conted {
+    width: 95%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin-bottom: .5rem;
+    background: rgba(255, 255, 255, 0.025);
+    border-radius: 7px;
+    box-shadow: 0px 2px 33px rgba(0, 0, 0, 0.040);
+    margin-top: .7rem;
+
+}
+
+.protagonisa_car_mubie_nanner .carmuvie_conted .car_img_muvie {
+    width: 5rem;
+    overflow: hidden;
+
+}
+
+.protagonisa_car_mubie_nanner .carmuvie_conted .car_img_muvie img {
+    width: 100%;
+    border-radius: 7px;
+
+}
+
+
+.metadata_actor_slider {
+    display: flex;
+    flex-direction: column;
+}
+
+.muvie_name_slider_conted {
+    white-space: nowrap;
+    max-width: 15rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+}
+
+.name_car_muvie_banner {
+    font-size: 1.3rem;
+    padding-left: .5rem;
+    width: 60%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+
+}
+
+.slider_muvie_metadata {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider_muvie_metadata span {
+    margin: .7rem 0 0 .5rem;
+
+}
+
+.Populariti_satrt_muvie {
+    display: flex;
+    align-items: center;
+    color: rgb(255, 196, 0);
+    padding-left: .3rem;
+    margin: 0 0 0 .7rem;
+}
+
+
+.Populariti_satrt_muvie i {
+    background-color: rgb(255, 196, 0);
+    color: var(--casinegro);
+    border-radius: 50%;
+    padding: .2rem;
+}
+
+
+.Muvie_type_banner_slider {
+    background-color: rgb(24, 24, 24);
+    color: rgb(255, 255, 255);
+    padding: 3px 6px;
+    border-radius: 3px;
+}
+
+
+.tex_protagonisa_modal {
+    font-weight: 400;
+    margin: 1rem 0 1rem .7rem;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* ======= biografia  styles */
+
+.biografia_slider_conted {
+    width: 95%;
+    margin: 0 .7rem;
+    color: var(--casinegro);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+
+
+}
+
+
+.biografia_slider_conted p {
+    max-height: 9rem;
+    text-overflow: ellipsis;
+    overflow: auto ;
+}
